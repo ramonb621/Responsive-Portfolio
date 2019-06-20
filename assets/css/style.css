@@ -181,6 +181,7 @@ li{
     overflow-y: visible;
 }
 @media screen and (max-width:980px){
+
     h1{
         display: inline-block;
         position: absolute;
@@ -218,15 +219,37 @@ li{
     }
 
 @media screen and (max-width: 768px){
+
     h1{
         background-color: #3F3F3F;
         color:#0C0C0C;
+    }
+    h2{
+        color:#3F3F3F;
+    }
+    hr{
+        border-color:#3F3F3F;
     }
     .menu{
         background-color: #0C0C0C;
         border-color:#F2F2F2;
     }
     a{
+        color:#F2F2F2;
+    }
+    .container, .cont2, .cont3{
+        background-color:#BFBDBD;
+        color:#3F3F3F;
+    }
+    #project1, #project2, #project3, #project4{
+        background-color:#3F3F3F;
+    }
+    .footer{
+        background-color:#0C0C0C;
+        color:#8C8C8C;
+    }
+    #submit{
+        background-color:#3F3F3F;
         color:#F2F2F2;
     }
 }
