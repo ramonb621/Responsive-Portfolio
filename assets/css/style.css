@@ -44,7 +44,8 @@ a{
     border:1.5px solid;
     position: absolute;
     top: 125px;
-    left: 185px;
+    left: 0;
+    right:0;
     margin: auto;
     color: #39657D;
     background-color: #76CBCC;
@@ -79,9 +80,9 @@ li{
     display: block; 
     width:960px;
     position: absolute;
-    position: absolute;
     top: 125px;
-    left: 185px;
+    left: 0;
+    right:0;
     margin: auto;
     text-align: justify;
     border: 1.5px solid;
@@ -180,13 +181,13 @@ li{
     box-sizing: border-box;
     overflow-y: visible;
 }
-@media screen and (max-width:980px){
+@media screen and (min-width:769px) and (max-width:980px){
 
     h1{
         display: inline-block;
-        position: absolute;
-        margin: auto;
-        left:30px;
+        position: fixed;
+        margin-top:0;
+        left: 170px
     }
     .menu{
         position: fixed;
@@ -198,8 +199,6 @@ li{
     }
     .container, .cont2, .cont3{
         width: 600px;
-        left: 30px;
-        margin-right: 80px;
     }
     #project1{
         top:85px;
@@ -218,11 +217,13 @@ li{
         bottom: 150px;
     }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 641px) and (max-width: 768px){
 
     h1{
         background-color: #3F3F3F;
         color:#0C0C0C;
+        left:65px;
+        margin:auto;
     }
     h2{
         color:#3F3F3F;
@@ -256,8 +257,25 @@ li{
 @media screen and (max-width:640px) {
     
     h1{
-        position: relative;
+        margin-top:0;
+        margin:auto;
         width:100%;
+        text-align: center;
+        left: 0;
+        right:0;
+    }
+    .menu{
+        position: absolute;
+        margin-top:80px;
+        text-align: center;
+        padding-top:20px;
+        padding-bottom: 15px;
+        left:0;
+        right:0;
+    }
+    .container, .cont2, .cont3{
+        top:150px;
+        width:auto;
         margin:auto;
     }
 }
