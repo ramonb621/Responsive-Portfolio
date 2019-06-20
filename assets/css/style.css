@@ -90,19 +90,24 @@ li{
 }
 @media screen and (max-width:980px){
     body{
-        width:auto;
+        width: 800px;;
 
     }
     h1{
         display: inline-block;
-        position: relative;
+        position: absolute;
         margin: auto;
+        left:30px;
     }
     .menu{
+        position: fixed;
         top: 0px;
         margin: auto;
     }
-    .container{
+    ul{
+        margin-right:50px;
+    }
+    .container, .cont2, .cont3{
         width: 600px;
         left: 30px;
         margin-right: 80px;
