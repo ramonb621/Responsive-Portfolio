@@ -3,6 +3,7 @@ html, body{
     margin: 0;
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
 }
+
 head{
 }
 body{
@@ -88,7 +89,30 @@ li{
     height: 700px;
 }
 @media screen and (max-width:980px){
-}
+    body{
+        width:auto;
+
+    }
+    h1{
+        display: inline-block;
+        position: relative;
+        margin: auto;
+    }
+    .menu{
+        top: 0px;
+        margin: auto;
+    }
+    .container{
+        width: 600px;
+        left: 30px;
+        margin-right: 80px;
+    }
+    .me{
+        float: left;
+        width: 135px;
+        height: 190px;
+        margin: 5px 10px 5px 10px;    
+    }
 @media screen and (width: 768px){
 
 }
@@ -152,7 +176,7 @@ li{
     color: #76CBCC;
     background-color: #25577D;
     flex-shrink: 0;
-
+    z-index: 3;
 }
 .push {
     min-height: 100%;
