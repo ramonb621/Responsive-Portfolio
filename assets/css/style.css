@@ -88,13 +88,6 @@ li{
     height: 700px;
 }
 @media screen and (max-width:980px){
-    h1{
-        position: relative;
-        margin-top: 0px;
-    }
-    ul{
-        position: absolute;
-    }
 }
 @media screen and (width: 768px){
 
