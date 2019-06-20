@@ -4,8 +4,6 @@ html, body{
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
 }
 
-head{
-}
 body{
     background-image: url(../../assets/images/cheap_diagonal_fabric.png);
     flex-grow: 1;
@@ -27,6 +25,10 @@ h2{
     margin-left: 10px;
     color: #25577D;
 }
+hr{
+    width:95%;
+    border-color:#39657D;
+}
 p{
     margin-right: 15px;
     margin-left: 15px;
@@ -47,7 +49,7 @@ a{
     color: #39657D;
     background-color: #76CBCC;
     clear: left;
-    z-index: 2;
+    z-index: 1;
 }
 .menu{
 font-size: 12pt;
@@ -61,15 +63,17 @@ position: fixed;
 margin: auto;
 background-color: #39657D;
 flex-shrink: 0;
-z-index: 1;
+z-index: 2;
 }
 ul{
     list-style-type: none;
-    margin: 0;
+    margin:0;
+    margin-right: 40px;
     padding: 0;
 }
 li{
     display: inline;
+    margin-right: 10px;
 }
 .cont2, .cont3{
     display: block; 
@@ -83,43 +87,10 @@ li{
     border: 1.5px solid;
     color: #39657D;
     background-color: #76CBCC;
-    z-index: 2;
+    z-index: 1;
 }
 .cont3{
     height: 700px;
-}
-@media screen and (max-width:980px){
-    body{
-        width: 800px;;
-
-    }
-    h1{
-        display: inline-block;
-        position: absolute;
-        margin: auto;
-        left:30px;
-    }
-    .menu{
-        position: fixed;
-        top: 0px;
-        margin: auto;
-    }
-    ul{
-        margin-right:50px;
-    }
-    .container, .cont2, .cont3{
-        width: 600px;
-        left: 30px;
-        margin-right: 80px;
-    }
-    .me{
-        float: left;
-        width: 135px;
-        height: 190px;
-        margin: 5px 10px 5px 10px;    
-    }
-@media screen and (width: 768px){
-
 }
 #project1, #project2, #project3, #project4{
     width: 200px;
@@ -146,14 +117,14 @@ li{
     display: block;
     position: absolute;
     right: 600px;
-    bottom:200px;
+    bottom:100px;
 }
 #project4{
     padding: 10px;
     display: block;
     position: absolute;
     left: 600px;   
-    bottom: 200px;
+    bottom: 100px;
 }
 .me{
     float: left;
@@ -205,8 +176,57 @@ li{
 }
 .comment [type=text] {
     display: block;
-    width: 650px;
-    padding: auto;
+    width: auto; /* this part of the code itself is doing nothing for the textarea but keeping for enlarging purposes*/
     box-sizing: border-box;
-    overflow: visible;
+    overflow-y: visible;
+}
+@media screen and (max-width:980px){
+    h1{
+        display: inline-block;
+        position: absolute;
+        margin: auto;
+        left:30px;
+    }
+    .menu{
+        position: fixed;
+        top: 0px;
+        margin: auto;
+    }
+    ul{
+        margin-right:50px;
+    }
+    .container, .cont2, .cont3{
+        width: 600px;
+        left: 30px;
+        margin-right: 80px;
+    }
+    #project1{
+        top:85px;
+        right: 350px;    
+    }
+    #project2{
+        top:85px;
+        left: 350px;    
+    }
+    #project3{
+        right: 350px;
+        bottom:150px;
+    }
+    #project4{
+        left: 350px;   
+        bottom: 150px;
+    }
+
+@media screen and (max-width: 768px){
+    h1{
+        background-color: #3F3F3F;
+        color:#0C0C0C;
+    }
+    .menu{
+        background-color: #0C0C0C;
+        border-color:#F2F2F2;
+    }
+    a{
+        color:#F2F2F2;
+    }
 }
