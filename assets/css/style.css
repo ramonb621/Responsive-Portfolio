@@ -180,7 +180,7 @@ li{
     overflow-y: visible;
 }
 @media screen and (max-width:980px){
-
+    
     h1{
         display: inline-block;
         position: fixed;
@@ -277,7 +277,21 @@ li{
     }
     .container, .cont2, .cont3{
         top:150px;
-        width:auto;
+        width:90%;
         margin:auto;
+    }
+    #project1{
+        right:300px;
+        top:95px;
+    }
+    #project2{
+        left:300px;
+        top:95px;
+    }
+    #project3{
+        right:300px;
+    }
+    #project4{
+        left: 300px;
     }
 }
